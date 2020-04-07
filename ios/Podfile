@@ -53,13 +53,16 @@ target 'BleQNSDK' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'QNSDK'
 
+  pod 'react-native-ble-plx', :path => '../node_modules/react-native-ble-plx'
+  
   target 'BleQNSDKTests' do
     inherit! :complete
     # Pods for testing
   end
 
-  use_native_modules!
+  # use_native_modules!
 
   # Enables Flipper.
   #
