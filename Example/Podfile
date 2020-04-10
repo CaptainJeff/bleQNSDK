@@ -1,0 +1,6 @@
+use_frameworks!
+target 'bleQNSDK_Tests' do
+  pod 'bleQNSDK', :path => '../'
+  
+  
+end

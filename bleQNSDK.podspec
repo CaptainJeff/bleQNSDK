@@ -1,31 +1,42 @@
-Pod::Spec.new do |spec|
-  spec.name         = "bleQNSDK"
-  spec.version      = "0.1.8"
-  spec.summary      = "An adapter for RxBluetoothKit that exposes consist API to crossplatform libraries"
+#
+# Be sure to run `pod lib lint bleQNSDK.podspec' to ensure this is a
+# valid spec before submitting.
+#
+# Any lines starting with a # are optional, but their use is encouraged
+# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
+#
 
-  spec.description  = <<-DESC
-  An adapter for RxBluetoothKit that exposes consist API to crossplatform libraries 
-                  DESC
+Pod::Spec.new do |s|
+  s.name             = 'bleQNSDK'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of bleQNSDK.'
 
-  spec.homepage     = "https://github.com/CaptainJeff/bleQNSDK.git"
-  spec.license      = "Apache License, Version 2.0."
-  spec.author             = { "Jeff Drakos" => "jeffdrakos@gmail.com" }
-  spec.social_media_url   = "https://twitter.com/polidea"
+# This description is used to generate tags and improve search results.
+#   * Think: What does it do? Why did you write it? What is the focus?
+#   * Try to keep it short, snappy and to the point.
+#   * Write the description between the DESC delimiters below.
+#   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  spec.platform = :ios
-  spec.ios.deployment_target = "8.0"
-  spec.swift_versions = ['4.0', '4.2', '5.0']
-  spec.source       = { :git => "https://github.com/CaptainJeff/bleQNSDK.git", :tag => "#{spec.version}" }
+  s.description      = <<-DESC
+TODO: Add long description of the pod here.
+                       DESC
 
-  spec.source_files  = "iOS/*.{h,m,swift}"
-  spec.exclude_files = 'android/**/*'
+  s.homepage         = 'https://github.com/captainjeff/bleQNSDK'
+  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.author           = { 'Jeff Drakos' => 'jeffdrakos@gmail.com' }
+  s.source           = { :git => 'https://github.com/captainjeff/bleQNSDK.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.ios.deployment_target = '8.0'
 
-  spec.frameworks  = 'CoreBluetooth'
-
-  spec.requires_arc = true
-
-  spec.dependency "QNSDK"
+  s.source_files = 'bleQNSDK/Classes/**/*'
   
+  # s.resource_bundles = {
+  #   'bleQNSDK' => ['bleQNSDK/Assets/*.png']
+  # }
 
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end

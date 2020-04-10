@@ -1,0 +1,6 @@
+framework module bleQNSDK {
+  umbrella header "bleQNSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
